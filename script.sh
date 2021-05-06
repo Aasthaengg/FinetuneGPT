@@ -10,7 +10,7 @@ hashmap["algorithm_examples"]="https://github.com/TheAlgorithms/Python.git"
 hashmap["scikitlearn_examples"]="https://github.com/scikit-learn/scikit-learn/tree/main/examples.git"
 hashmap["Computer_vision"]="https://github.com/PacktPublishing/Computer-Vision-with-Python-3.git"
 hashmap["NVIDIA_DeepLearning_examples"]="https://github.com/NVIDIA/DeepLearningExamples.git"
-hasmap["Seaborn_examples"]="https://github.com/mwaskom/seaborn/tree/master/examples.git"
+hashmap["Seaborn_examples"]="https://github.com/mwaskom/seaborn/tree/master/examples.git"
 hashmap["Matplotlib_examples"]="https://github.com/matplotlib/matplotlib/tree/master/examples.git"
 
 
