@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git clone https://github.com/krshrimali/auto_coding.git && cd auto_coding
+git clone https://github.com/Aasthaengg/auto_coding.git && cd auto_coding
 pip install -r requirements.txt # transformers, pytorch etc.
 
 declare -A hashmap
@@ -25,6 +25,7 @@ echo hashmap has ${#hashmap[@]} elements
 
 echo "Starting pre-processing data..."
 sed -i "s/'examples'/'pytorch_examples', 'tensorflow_examples', 'algorithm_examples', 'Computer_vision', 'NVIDIA_DeepLearning_examples'/g" convert.py && python3 convert.py --segment_len 256 --stride 10 --dev_size 0.1
+sed -i 's/"<examples>"/"<pytorch_examples>", "<tensorflow_examples>", "<algorithm_examples>", "<Computer_vision>', "<NVIDIA_DeepLearning_examples'/g>" ../train.py
 echo "Finished pre-processing data"
 
 cd ../ && python3 train.py --model_select distilgpt2
