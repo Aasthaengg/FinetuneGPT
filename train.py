@@ -1,11 +1,9 @@
 import argparse, os
 import logging
 
-logging.basicConfig(
-    format=logging.BASIC_FORMAT,
+logging.basicConfig(format=logging.BASIC_FORMAT,
     datefmt='%Y-%m-%d %H:%M:%S',
-    level=logging.INFO
-)
+    level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 MODEL_MAP = {"distilgpt2": "distilgpt2", "gpt2": "gpt2", "gpt2_medium": "gpt2-medium",
